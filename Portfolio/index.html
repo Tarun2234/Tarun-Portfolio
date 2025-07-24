@@ -1,91 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/8ab5fc5df8.js" crossorigin="anonymous"></script>
 </head>
-<body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="Images/LOGO.png" class="logo">
-            <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#services">My Certifications</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
 
-        </nav>
-        <div class="header-text">
-            <p>WebD | Machine Learning Developer</p>
-            <h1>Hi, I'm <span>Tarun</span> <br>From Haridwar Uttrakhand</h1>
-            <h3>CSE Student in Chandigarh University</h3>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/LOGO.png" class="logo" />
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">My Certifications</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>🚀 Software Developer | 🌐 Web Dev | 🤖 Machine & Deep Learning</p>
+                <p>🧠 AI Enthusiast</p>
+                <h1>Hi, I'm <span>Tarun</span> <br />From Haridwar Uttrakhand</h1>
+                <h3>CSE Student in Chandigarh University</h3>
+            </div>
         </div>
     </div>
-    
-</div>
-<!---------------------about------------------------------->
+
+    <!---------------------about------------------------------->
     <div id="About">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="Images/Tarun_Image.jpeg">
+                    <img src="Images/Tarun_Image.jpeg" />
                 </div>
-             <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>
-                    I am a dedicated college student actively learning about Web Development and Machine Learning. 
-                    I enjoy solving problems creatively and stay updated on industry trends and new technologies, 
-                    focusing on web development and machine learning.
-                    I enjoy solving problems creatively and stay updated on industry trends and new technologies, 
-                    focusing on web development and machine learning. My goal is to contribute significantly in these areas, 
-                    applying my academic knowledge and practical skills to drive innovation and progress.
-                </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('Education')">Education</p>
-                    <p class="tab-links" onclick="opentab('Volunteering')">Volunteering</p>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a dedicated college student actively learning about Web Development and Machine Learning.
+                        I enjoy solving problems creatively and stay updated on industry trends and new technologies,
+                        focusing on web development and machine learning.
+                        I enjoy solving problems creatively and stay updated on industry trends and new technologies,
+                        focusing on web development and machine learning. My goal is to contribute significantly in
+                        these areas, applying my academic knowledge and practical skills to drive innovation and progress.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Volunteering')">Volunteering</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>HTML/CSS/JS</span><br />Designing Web Application Interfaces</li>
+                            <li><span>Machine Learning</span><br />Creating ML models using python language</li>
+                            <li><span>C++</span><br />Coding Language</li>
+                            <li><span>Data Mining</span><br />Orange and Weka Software</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Intel Internship (Session: July 2023)</span><br />Intel AI competency workshop of AI as a
+                                part of Future Workforce Program (Workshop)</li>
+                            <li><span>Virtual Job Simulation (Session: Jan 2024)</span><br />Accenture North America (Online)
+                                Data Analytics and Visualization Job Simulation</li>
+                            <li><span>Industrial Visit of CSIR-CBRI Roorkee (11th Standard | 2019)</span><br />State level Student Workshop
+                                Organized By CSIR-CBRI Roorkee (Won Silver Medal)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>BE-CSE specialization in AIML (Session: 2021-2025)</span><br />Chandigarh University</li>
+                            <li><span>Intermediate (CBSE)</span><br />KV BHEL HARIDWAR UTTRAKHAND | Session: 2020-2021 | Percentage:
+                                89%</li>
+                            <li><span>Matriculation (CBSE)</span><br />KV BHEL HARIDWAR UTTRAKHAND | Session: 2018-2019 | Percentage:
+                                90.6%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Volunteering">
+                        <ul>
+                            <li><span>Students MOOCS Coordinator</span><br /> DAA Department | Chandigarh University</li>
+                            <li><span>Linkdin Learning on campus Ambassador </span><br />Chandigarh University</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="tab-contents active-tab" id="Skills">
-                    <ul>
-                        <li><span>HTML/CSS/JS</span><br>Designing Web Application Interfaces</li>
-                        <li><span>Machine Learning</span><br>Creating ML models using python language</li>
-                        <li><span>C++</span><br>Coding Language</li>
-                        <li><span>Data Mining</span><br>Orange and Weka Software</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="Experience">
-                    <ul>
-                        <li><span>Intel Internship (Session: July 2023)</span><br>Intel AI competency workshop of AI as a part of Future Workforce Program (Workshop)</li>
-                        <li><span>Virtual Job Simulation (Session: Jan 2024)</span><br>Accenture North America (Online) Data Analytics and Visualization Job Simulation</li>
-                        <li><span>Industrial Visit of CSIR-CBRI Roorkee (11th Standard | 2019)</span><br>State level Student Workshop Organized By CSIR-CBRI Roorkee (Won Silver Medal)</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="Education">
-                    <ul>
-                        <li><span>BE-CSE specialization in AIML (Session: 2021-2025)</span><br>Chandigarh University</li>
-                        <li><span>Intermediate (CBSE)</span><br>KV BHEL HARIDWAR UTTRAKHAND | Session: 2020-2021 | Percentage: 89%</li> 
-                        <li><span>Matriculation (CBSE)</span><br>KV BHEL HARIDWAR UTTRAKHAND | Session: 2018-2019 | Percentage: 90.6%</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="Volunteering">
-                    <ul>
-                        <li><span>Students MOOCS Coordinator</span><br> DAA Department | Chandigarh University</li>
-                        <li><span>Linkdin Learning on campus Ambassador </span><br>Chandigarh University</li> 
-                    </ul>
-                </div>
-            </div>
             </div>
         </div>
-    </div> 
-    
-<!---------------------Services-------------------------------------->
+    </div>
+
+    <!---------------------Services-------------------------------------->
     <div id="services">
         <div class="container">
             <h1 class="sub-title">My Certifications</h1>
@@ -118,7 +125,9 @@
                     <i class="fa-solid fa-chart-bar"></i>
                     <h2>Accenture North America - Data Analytics and Visualization Job Simulation (Forage)</h2>
                     <p>Session: Jan 2024</p>
-                    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/hzmoNKtzvAzXsEqx8_Accenture%20North%20America_sf7PEXHHrQ7HbMj6G_1704811313440_completion_certificate.pdf">Learn more</a>
+                    <a
+                        href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/hzmoNKtzvAzXsEqx8_Accenture%20North%20America_sf7PEXHHrQ7HbMj6G_1704811313440_completion_certificate.pdf">Learn
+                        more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-laptop-file"></i>
@@ -129,122 +138,151 @@
             </div>
         </div>
     </div>
-<!--------------------Projects-------------------------------------->
-<div id="project">
-    <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="work-list">
-           <div class="work">
-            <img src="Images/Lung Cancer Detection.png">
-            <div class="layer">
-                <h3>Lung Cancer Detection</h3>
-                <p>Machine Learning model that is used to classify the images of Lung cells into different classes of lung cancer.</p>
-                <a href="https://github.com/Tarun2234/Deep-learning-models-for-early-detection-and-diagnosis-of-cancer-from-medical-imaging"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-           </div>
-           <div class="work">
-            <img src="Images/Birds Species.png">
-            <div class="layer">
-                <h3>Birds Species Classification</h3>
-                <p>Machine Learning model that is used to classify the images of Birds into different classes according to their species.</p>
-                <a href="https://github.com/Tarun2234/Birds_Species_Classification_using_Machine_Learning_Model"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-           </div>
-           <div class="work">
-            <img src="Images/Tableau.png">
-            <div class="layer">
-                <h3>Tableau Dashboard</h3>
-                <p>Created a tableau dashboard on the dataset of road accident and visualize it for analysis of data.</p>
-                <a href="https://github.com/Tarun2234/Tablaeu_Dashboard"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-           </div>
-           <div class="work">
-            <img src="Images/doctor-from-future-concept.jpg">
-            <div class="layer">
-                <h3>Early Detection of Diseases in Medical</h3>
-                <p>This project uses a 2D U-Net CNN to detect pulmonary nodules in CT scans, enhancing accuracy with the LUNA16 dataset.</p>
-                <a href="https://github.com/Tarun2234/Early-Detection-of-Diseases-in-Medical"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-           </div>
-           <div class="work">
-            <img src="Images/Medibot_IMG.webp">
-            <div class="layer">
-                <h3>Medibot</h3>
-                <p>It is a project that uses the gemini API and a self made pkl and h5 model to predict diseases and provide the specific information.</p>
-                <a href="https://github.com/Tarun2234/Medibot.git"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-           </div>
-        </div>
-        <a href="#" class="btn">See more</a>
-    </div>
-</div>
-
-<!---------------------------------Contact------------------------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> tarun22034@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i> 91+ 7983355818</p>
-                <div class="social-icons">
-                    <a href="https://github.com/Tarun2234"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/tarun-6b2b43230/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/iam_tarun2.0/"><i class="fa-brands fa-square-instagram"></i></a>
+    <!--------------------Projects-------------------------------------->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/Lung Cancer Detection.png" />
+                    <div class="layer">
+                        <h3>Lung Cancer Detection</h3>
+                        <p>Machine Learning model that is used to classify the images of Lung cells into different classes
+                            of lung cancer.</p>
+                        <a
+                            href="https://github.com/Tarun2234/Deep-learning-models-for-early-detection-and-diagnosis-of-cancer-from-medical-imaging"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
                 </div>
-                <a href="tarun22034gmail.com_Resume.pdf" class="btn btn2">Download Resume</a>
+                <div class="work">
+                    <img src="Images/Birds Species.png" />
+                    <div class="layer">
+                        <h3>Birds Species Classification</h3>
+                        <p>Machine Learning model that is used to classify the images of Birds into different classes
+                            according to their species.</p>
+                        <a
+                            href="https://github.com/Tarun2234/Birds_Species_Classification_using_Machine_Learning_Model"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Tableau.png" />
+                    <div class="layer">
+                        <h3>Tableau Dashboard</h3>
+                        <p>Created a tableau dashboard on the dataset of road accident and visualize it for analysis of
+                            data.</p>
+                        <a href="https://github.com/Tarun2234/Tablaeu_Dashboard"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/doctor-from-future-concept.jpg" />
+                    <div class="layer">
+                        <h3>Early Detection of Diseases in Medical</h3>
+                        <p>This project uses a 2D U-Net CNN to detect pulmonary nodules in CT scans, enhancing accuracy
+                            with the LUNA16 dataset.</p>
+                        <a href="https://github.com/Tarun2234/Early-Detection-of-Diseases-in-Medical"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Medibot_IMG.webp" />
+                    <div class="layer">
+                        <h3>Medibot</h3>
+                        <p>It is a project that uses the gemini API and a self made pkl and h5 model to predict diseases and
+                            provide the specific information.</p>
+                        <a href="https://github.com/Tarun2234/Medibot.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+            <a href="#" class="btn">See more</a>
         </div>
     </div>
-    <div class="copyright"> 
-        <p> Copyright © Tarun. Made by Tarun. All rights reserved</p> 
-    </div>
-</div>
 
+    <!---------------------------------Contact------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> tarun22034@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 91+ 7983355818</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Tarun2234"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tarun-6b2b43230/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/iam_tarun2.0/"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="21BCS11870_Tarun.pdf" class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="Email" placeholder="Your Email" required />
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright © Tarun. Made by Tarun. All rights reserved</p>
+        </div>
+    </div>
 
     <script>
-        var tablinks=document.getElementsByClassName("tab-links")
-        var tabcontents=document.getElementsByClassName("tab-contents")
-        function opentab(tabname){
-            for(tablink of tablinks){
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-            for(tabcontent of tabcontents){
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-
     </script>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbw3mbq4jyiFSzeAqgU_zErQrd_RprjS_-69_w2-K3hyBenRJ4tMgUdDr-XEkskv0wc6uQ/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Hello, Thanks for your Feedback."
-                setTimeout(function(){
-                    msg.innerHTML= ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
-    
 
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Hello, Thanks for your Feedback."
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            );
+        }
+
+        const headerText = document.querySelector('.header-text');
+
+        function checkAnimation() {
+            if (isInViewport(headerText)) {
+                headerText.classList.add('animate-fadeIn');
+            } else {
+                headerText.classList.remove('animate-fadeIn');
+            }
+        }
+
+        window.addEventListener('scroll', checkAnimation);
+        window.addEventListener('load', checkAnimation);
+    </script>
 </body>
+
 </html>
